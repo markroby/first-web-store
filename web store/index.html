@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el ra3y store</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div class="navbar">
+       <div class="contaner">
+           <a class="logo" href="#"> EL <span>Ra3y</span></a>
+
+           <img id="mobile-cta" class="mobile-menu" src="image/menu.svg" alt="Open Navigation">
+
+           <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="image/exit.svg" alt="close Navigation">
+              
+                <ul class="primary-nav">
+                   <li class="current"> <a href="#">Home</a></li>
+                   <li> <a href="#">Features</a></li>
+                   <li> <a href="#">Pricing</a></li>
+               </ul>
+               <ul class="secondary-nav">
+                <li class="location"> <a href="#">Contact</a></li>
+                <li> <a href="#">Location</a></li>
+                
+            </ul>
+           </nav>
+       </div>
+   </div>
+   <section class="hero">
+    <div class="contaner">
+       <div class="left-col">
+           <P class="subhead">Hi In The  </P>
+           <h1>BIG Site</h1>
+           <div class="hero-cta">
+               <a href="#" class="primary-cta">try for free </a>
+               
+           </div>
+       </div>
+       <img src="image/illustration.svg" class="hero-img" alt="illustration">
+     </div>
+   </section>
+<section class="features-section">
+    <div class="container">
+        <ul class="features-section">
+            <li>Send SMS</li>
+            <li>Send Whatspp Message</li>
+            <li>Social Media Announcements</li>
+            <li>Open In 11:00AM To 10:00PM</li>
+        </ul>
+        <img src="image/holding-phone.jpg" alt="Man holding phone">
+    </div>
+</section>
+<section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="image/person.jpg" alt="Person">
+                <blockquote>"Today, the ONE most important skill you can acquire is Computer knowledge. You really don’t need to know martial arts, Bike riding, parachting or cooking. It won’t hurt to know them, But You don’t need to know them to survive."</blockquote>
+                <cite>-Mark Roby</cite>
+            </li>
+            <li>
+                <img src="image/person.jpg" alt="Person">
+                <blockquote>"Today, the ONE most important skill you can acquire is Computer knowledge. You really don’t need to know martial arts, Bike riding, parachting or cooking. It won’t hurt to know them, But You don’t need to know them to survive."</blockquote>
+                <cite>-Mark Roby</cite>
+            </li>
+            <li>
+                <img src="image/person.jpg" alt="Person">
+                <blockquote>"Today, the ONE most important skill you can acquire is Computer knowledge. You really don’t need to know martial arts, Bike riding, parachting or cooking. It won’t hurt to know them, But You don’t need to know them to survive."</blockquote>
+                <cite>-Mark Roby</cite>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="contact-section">
+   <div class="container">
+       <div class="contact-lef">
+           <h2>Contact</h2>
+           <form action="">
+               <label for="name">Name</label>
+               <input type="text"id="name"name="name" placeholder="Your Name ">
+
+               <label for="email">Email</label>
+               <input type="email"id="email"name="email" placeholder="Your Email ">
+
+               <label for="message">Message</label>
+               <textarea type="message"id="message"cols="30" rows="10"></textarea>
+
+               <input type="Submit" class="send-message-cta" value="Send message">
+
+           </form>
+       </div>
+      <div class="contact-rig">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d261.67773041730004!2d31.25106160010441!3d30.049409475133487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841ce293f6ed7%3A0x8e2c4fef7461dac0!2z2KfZhNmF2LHZiNipINmE2YTYp9mE2YPYqtix2YjZhtmK2KfYqg!5e0!3m2!1sen!2seg!4v1633307373466!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+   </div> 
+</section>
+
+
+
+</body>
+
+
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+                 nav= document.querySelector('nav')
+                mobileBtnExit=document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click',() =>{
+         nav.ClassList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click',()=>{
+        nav.ClassList.remove('menu-btn');
+    })
+</script>
+
+</html>
